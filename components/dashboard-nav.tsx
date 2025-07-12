@@ -19,8 +19,7 @@ export function DashboardNav() {
   const pathname = usePathname();
   const { videos } = useVideoStore();
 
-  const pendingCount = videos.filter((v: { status: string }) => v.status === "pending").length;
-
+  const pendingCount = videos.filter((v) => v.status === "pending").length;
 
   const navigation = [
     {
